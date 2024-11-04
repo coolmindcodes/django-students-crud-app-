@@ -39,5 +39,11 @@ def delete_student(request, s_id):
     student.delete()
     return redirect("show_students_url")
 
+def show_details(request, s_id):
+    student = Student.objects.get(id=s_id)
+    context = {"student": student}
+    template_file = "students/show_details.html"
+    return render(request, template_file, context)
+
 # pip install crispy-bootstrap5
 # pip install django-crispy-forms
