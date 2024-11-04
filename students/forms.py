@@ -6,7 +6,7 @@ from django import forms
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ['name', 'email', 'phone', 'dob']
+        fields = ['name', 'email', 'phone', 'dob', 'profile_picture']
 
         labels = {
             'name': 'Full Name',
