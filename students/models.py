@@ -20,4 +20,4 @@ class Student(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # pip install Pillow
+# pip install Pillow
